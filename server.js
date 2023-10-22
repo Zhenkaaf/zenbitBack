@@ -14,7 +14,10 @@ mongoose
   .then((res) => console.log("connected to db"))
   .catch((error) => console.log("error db", error));
 
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://upset-pink-hem.cyclic.app",
+];
 app.use(
   cors({
     origin: allowedOrigins,
