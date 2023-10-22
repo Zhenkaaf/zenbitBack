@@ -24,7 +24,7 @@ app.use(
   })
 );
 
-app.options("/auth/register", (req, res, next) => {
+/* app.options("/auth/register", (req, res, next) => {
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
     res.setHeader("Access-Control-Allow-Origin", origin);
@@ -50,7 +50,7 @@ app.options("/auth/login", (req, res, next) => {
   );
   res.setHeader("Access-Control-Allow-Credentials", "true");
   res.status(200).end();
-});
+}); */
 
 app.use((req, res, next) => {
   const origin = req.headers.origin;
