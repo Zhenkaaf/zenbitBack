@@ -40,6 +40,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/auth", authRoute);
+app.use("/deals", dealsRoute);
 
 app.listen(PORT, (error) => {
   error
