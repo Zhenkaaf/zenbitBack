@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const authRoute = require("./routes/auth");
+const dealRoute = require("./routes/deal");
 require("dotenv").config();
 
 app.use(express.json());
@@ -40,7 +41,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/auth", authRoute);
-app.use("/deals", dealsRoute);
+app.use("/deal", dealRoute);
 
 app.listen(PORT, (error) => {
   error
