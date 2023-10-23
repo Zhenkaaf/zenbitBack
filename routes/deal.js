@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const dealSchema = require("../models/dealSchema");
+const DealSchema = require("../models/dealSchema");
 
 //getAllDeals
 router.get("/alldeals", async (req, res) => {
